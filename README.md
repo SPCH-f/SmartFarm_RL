@@ -18,7 +18,7 @@ Rather than a monolithic setup, the architecture simulates an industrial IoT dep
 
 ```text
  ┌───────────────────────────────┐               ┌───────────────────────────────┐
- │   [Server: Greenhouse]      │               │   [Client: Raspberry Pi]    │
+ │   [Server: Greenhouse]        │               │   [Client: Raspberry Pi]      │
  │                               │               │                               │
  │  - Environment State Tracking │ ───(Data)───> │  - Pre-trained Q-Table Brain  │
  │  - Stochastic Weather (Drift) │ <──(Action)── │  - Inference & Guardrails     │
@@ -38,11 +38,11 @@ Rather than a monolithic setup, the architecture simulates an industrial IoT dep
 ---
 
 ## How to Run
-### Step 1: Initialize the Physical Greenhouse (Server)
+#### Step 1: Initialize the Physical Greenhouse (Server)
 ```Bash
 python greenhouse_server.py
 ```
-### Step 2: Boot the AI Controller (Virtual Raspberry Pi)
+#### Step 2: Boot the AI Controller (Virtual Raspberry Pi)
 ```Bash
 python raspberry_bot.py
 ```

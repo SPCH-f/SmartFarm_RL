@@ -2,8 +2,10 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.8+-blue?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
   <img src="https://img.shields.io/badge/Reinforcement%20Learning-Q--Learning-green?style=for-the-badge" alt="RL">
-  <img src="https://img.shields.io/badge/MLOps-Guardrails%20%26%20Simulation-orange?style=for-the-badge" alt="MLOps">
+  <img src="https://img.shields.io/badge/MLOps-Data%20Pipeline%20%26%20Optimization-orange?style=for-the-badge" alt="MLOps">
 </p>
 
 ---

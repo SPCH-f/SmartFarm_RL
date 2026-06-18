@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  # ฐานข้อมูล MySQL
+  db_smartfarm:
+    image: mysql:8.0
+    container_name: mysql_smartfarm
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: smartfarm_analytics
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  # phpMyAdmin
+  phpmyadmin_smartfarm:
+    image: phpmyadmin:latest
+    container_name: phpmyadmin_smartfarm
+    environment:
+      PMA_HOST: db_smartfarm
+      PMA_USER: root
+      PMA_PASSWORD: root_password
+    ports:
+      - "8080:80"
+    depends_on:
+      - db_smartfarm
+
+volumes:
+  mysql_data:
